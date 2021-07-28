@@ -75,8 +75,8 @@ func (s *Web) process(w http.ResponseWriter, r *http.Request) error {
 		return nil
 	}
 	db := s.db.Get()
-	u := new(models.URL)
-	err = db.Model(u).Where("digest(url, 'sha1') = ?", data).Select()
+	m := new(models.URL)
+	err = db.Model(m).Where("digest(url, 'sha1') = ?", data).Select()
 	if err == pg.ErrNoRows {
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("url not found"))
@@ -85,9 +85,12 @@ func (s *Web) process(w http.ResponseWriter, r *http.Request) error {
 	if err != nil {
 		return errors.Wrapf(err, "failed to find url by hash=%v", h)
 	}
-	w.Header().Set("Last-Modified", u.CreatedAt.Format(http.TimeFormat))
+	go func() {
+		db.Model(m).Set("accessed_at = now()").WherePK().Update()
+	}()
+	w.Header().Set("Last-Modified", m.CreatedAt.Format(http.TimeFormat))
 	w.Header().Set("Etag", h)
-	w.Write([]byte(u.URL))
+	w.Write([]byte(m.URL))
 	return nil
 }
 

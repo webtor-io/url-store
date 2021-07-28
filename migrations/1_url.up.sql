@@ -4,7 +4,7 @@ CREATE TABLE public.url
 (
     url text NOT NULL,
     created_at timestamp with time zone DEFAULT now() NOT NULL,
-    last_accessed_at timestamp with time zone DEFAULT now() NOT NULL,
+    accessed_at timestamp with time zone DEFAULT now() NOT NULL,
     CONSTRAINT url_pkey PRIMARY KEY (url)
 );
 
