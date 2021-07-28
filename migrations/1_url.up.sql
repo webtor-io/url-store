@@ -8,7 +8,4 @@ CREATE TABLE public.url
     CONSTRAINT url_pkey PRIMARY KEY (url)
 );
 
-ALTER TABLE public.url
-    OWNER to url_store;
-
 CREATE INDEX url_idx ON url (digest(url, 'sha1'));
