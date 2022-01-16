@@ -1,10 +1,5 @@
 protoc:
-	protoc -I proto/ \
-	--go_out=proto/ \
-	--go-grpc_out=proto/ \
-	--go_opt=paths=source_relative \
-	--go-grpc_opt=paths=source_relative \
-	proto/url-store.proto
+	protoc -I proto/ proto/url-store.proto --go_out=plugins=grpc:proto
 
 build:
 	go build .

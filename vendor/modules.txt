@@ -1,4 +1,5 @@
 # github.com/aws/aws-sdk-go v1.36.28
+## explicit; go 1.11
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/arn
 github.com/aws/aws-sdk-go/aws/awserr
@@ -44,11 +45,13 @@ github.com/aws/aws-sdk-go/service/s3
 github.com/aws/aws-sdk-go/service/sts
 github.com/aws/aws-sdk-go/service/sts/stsiface
 # github.com/cpuguy83/go-md2man/v2 v2.0.0
+## explicit; go 1.12
 github.com/cpuguy83/go-md2man/v2/md2man
 # github.com/go-pg/migrations/v8 v8.1.0
+## explicit; go 1.16
 github.com/go-pg/migrations/v8
 # github.com/go-pg/pg/v10 v10.9.1
-## explicit
+## explicit; go 1.11
 github.com/go-pg/pg/v10
 github.com/go-pg/pg/v10/internal
 github.com/go-pg/pg/v10/internal/parser
@@ -57,8 +60,10 @@ github.com/go-pg/pg/v10/orm
 github.com/go-pg/pg/v10/pgjson
 github.com/go-pg/pg/v10/types
 # github.com/go-pg/zerochecker v0.2.0
+## explicit; go 1.13
 github.com/go-pg/zerochecker
 # github.com/go-redis/redis v6.15.9+incompatible
+## explicit
 github.com/go-redis/redis
 github.com/go-redis/redis/internal
 github.com/go-redis/redis/internal/consistenthash
@@ -67,49 +72,58 @@ github.com/go-redis/redis/internal/pool
 github.com/go-redis/redis/internal/proto
 github.com/go-redis/redis/internal/util
 # github.com/golang/protobuf v1.5.2
-## explicit
+## explicit; go 1.9
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
 github.com/golang/protobuf/ptypes/duration
 github.com/golang/protobuf/ptypes/timestamp
 # github.com/jinzhu/inflection v1.0.0
+## explicit
 github.com/jinzhu/inflection
 # github.com/jmespath/go-jmespath v0.4.0
+## explicit; go 1.14
 github.com/jmespath/go-jmespath
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
 # github.com/russross/blackfriday/v2 v2.1.0
+## explicit
 github.com/russross/blackfriday/v2
 # github.com/sirupsen/logrus v1.8.1
-## explicit
+## explicit; go 1.13
 github.com/sirupsen/logrus
 # github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc
+## explicit
 github.com/tmthrgd/go-hex
 # github.com/urfave/cli v1.22.5
-## explicit
+## explicit; go 1.11
 github.com/urfave/cli
 # github.com/vmihailenco/bufpool v0.1.11
+## explicit; go 1.13
 github.com/vmihailenco/bufpool
 # github.com/vmihailenco/msgpack/v5 v5.3.0
+## explicit; go 1.11
 github.com/vmihailenco/msgpack/v5
 github.com/vmihailenco/msgpack/v5/msgpcode
 # github.com/vmihailenco/tagparser v0.1.2
+## explicit; go 1.13
 github.com/vmihailenco/tagparser
 github.com/vmihailenco/tagparser/internal
 github.com/vmihailenco/tagparser/internal/parser
 # github.com/vmihailenco/tagparser/v2 v2.0.0
+## explicit; go 1.15
 github.com/vmihailenco/tagparser/v2
 github.com/vmihailenco/tagparser/v2/internal
 github.com/vmihailenco/tagparser/v2/internal/parser
 # github.com/webtor-io/abuse-store v0.0.0-20210710111318-01e4ce3bdc7c
-## explicit
+## explicit; go 1.16
 github.com/webtor-io/abuse-store/abuse-store
 # github.com/webtor-io/common-services v0.0.0-20210506124642-57d7ac936cc4
-## explicit
+## explicit; go 1.15
 github.com/webtor-io/common-services
 # go.opentelemetry.io/otel v0.19.0
+## explicit; go 1.14
 go.opentelemetry.io/otel
 go.opentelemetry.io/otel/attribute
 go.opentelemetry.io/otel/codes
@@ -120,15 +134,18 @@ go.opentelemetry.io/otel/internal/trace/noop
 go.opentelemetry.io/otel/propagation
 go.opentelemetry.io/otel/unit
 # go.opentelemetry.io/otel/metric v0.19.0
+## explicit; go 1.14
 go.opentelemetry.io/otel/metric
 go.opentelemetry.io/otel/metric/number
 go.opentelemetry.io/otel/metric/registry
 # go.opentelemetry.io/otel/trace v0.19.0
+## explicit; go 1.14
 go.opentelemetry.io/otel/trace
 # golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
+## explicit; go 1.11
 golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.0.0-20210716203947-853a461950ff
-## explicit
+## explicit; go 1.17
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
 golang.org/x/net/http2/hpack
@@ -136,21 +153,22 @@ golang.org/x/net/idna
 golang.org/x/net/internal/timeseries
 golang.org/x/net/trace
 # golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c
-## explicit
+## explicit; go 1.17
 golang.org/x/sys/cpu
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/text v0.3.6
+## explicit; go 1.11
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
 # google.golang.org/genproto v0.0.0-20210726143408-b02e89920bf0
-## explicit
+## explicit; go 1.11
 google.golang.org/genproto/googleapis/rpc/status
 # google.golang.org/grpc v1.39.0
-## explicit
+## explicit; go 1.11
 google.golang.org/grpc
 google.golang.org/grpc/attributes
 google.golang.org/grpc/backoff
@@ -196,7 +214,7 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 # google.golang.org/protobuf v1.27.1
-## explicit
+## explicit; go 1.9
 google.golang.org/protobuf/encoding/prototext
 google.golang.org/protobuf/encoding/protowire
 google.golang.org/protobuf/internal/descfmt
@@ -228,4 +246,5 @@ google.golang.org/protobuf/types/known/anypb
 google.golang.org/protobuf/types/known/durationpb
 google.golang.org/protobuf/types/known/timestamppb
 # mellium.im/sasl v0.2.1
+## explicit
 mellium.im/sasl

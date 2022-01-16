@@ -1,9 +1,5 @@
 syntax = "proto3";
 
-option go_package = "github.com/webtor-io/url-store;url_store";
-
-package webtor.url_sore;
-
 service UrlStore {
   // Pushes url to the store
   rpc Push (PushRequest) returns (PushReply) {}
